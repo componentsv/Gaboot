@@ -16,6 +16,7 @@
         "illuminate/support"    : "5.4.*",
         "illuminate/contracts"  : "5.4.*",
         "componentsv/foundation": "0.3.*",
-        "tcg/voyager"           : "0.11.*"
+        "tcg/voyager"           : "0.11.*",
+        "laravel/passport"      : "^2.0"
     }
 }
