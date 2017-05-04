@@ -19,9 +19,9 @@ class MenuItemsTableSeeder extends Seeder
             $menu = Menu::where('name', 'admin')->firstOrFail();
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Dashboard',
-                'url'        => route('voyager.dashboard', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Dashboard',
+                'url'     => route('voyager.dashboard', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
@@ -34,9 +34,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Media',
-                'url'        => route('voyager.media.index', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Media',
+                'url'     => route('voyager.media.index', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
@@ -49,9 +49,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Posts',
-                'url'        => route('voyager.posts.index', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Posts',
+                'url'     => route('voyager.posts.index', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
@@ -64,9 +64,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Users',
-                'url'        => route('voyager.users.index', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Users',
+                'url'     => route('voyager.users.index', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
@@ -79,9 +79,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Categories',
-                'url'        => route('voyager.categories.index', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Categories',
+                'url'     => route('voyager.categories.index', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
@@ -94,9 +94,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Pages',
-                'url'        => route('voyager.pages.index', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Pages',
+                'url'     => route('voyager.pages.index', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
@@ -109,9 +109,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Roles',
-                'url'        => route('voyager.roles.index', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Roles',
+                'url'     => route('voyager.roles.index', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
@@ -124,9 +124,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $toolsMenuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Tools',
-                'url'        => '',
+                'menu_id' => $menu->id,
+                'title'   => 'Tools',
+                'url'     => '',
             ]);
             if (!$toolsMenuItem->exists) {
                 $toolsMenuItem->fill([
@@ -139,9 +139,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Menu Builder',
-                'url'        => route('voyager.menus.index', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Menu Builder',
+                'url'     => route('voyager.menus.index', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
@@ -154,9 +154,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Database',
-                'url'        => route('voyager.database.index', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Database',
+                'url'     => route('voyager.database.index', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([
@@ -169,9 +169,9 @@ class MenuItemsTableSeeder extends Seeder
             }
 
             $menuItem = MenuItem::firstOrNew([
-                'menu_id'    => $menu->id,
-                'title'      => 'Settings',
-                'url'        => route('voyager.settings.index', [], false),
+                'menu_id' => $menu->id,
+                'title'   => 'Settings',
+                'url'     => route('voyager.settings.index', [], false),
             ]);
             if (!$menuItem->exists) {
                 $menuItem->fill([

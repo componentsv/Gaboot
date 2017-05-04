@@ -11,12 +11,12 @@ class DataRowsTableSeeder extends Seeder
      */
     public function run()
     {
-        $postDataType = DataType::where('slug', 'posts')->firstOrFail();
-        $pageDataType = DataType::where('slug', 'pages')->firstOrFail();
-        $userDataType = DataType::where('slug', 'users')->firstOrFail();
+        $postDataType     = DataType::where('slug', 'posts')->firstOrFail();
+        $pageDataType     = DataType::where('slug', 'pages')->firstOrFail();
+        $userDataType     = DataType::where('slug', 'users')->firstOrFail();
         $categoryDataType = DataType::where('slug', 'categories')->firstOrFail();
-        $menuDataType = DataType::where('slug', 'menus')->firstOrFail();
-        $roleDataType = DataType::where('slug', 'roles')->firstOrFail();
+        $menuDataType     = DataType::where('slug', 'menus')->firstOrFail();
+        $roleDataType     = DataType::where('slug', 'roles')->firstOrFail();
 
         $dataRow = $this->dataRow($postDataType, 'id');
         if (!$dataRow->exists) {
@@ -687,9 +687,9 @@ class DataRowsTableSeeder extends Seeder
                 'add'          => 1,
                 'delete'       => 1,
                 'details'      => json_encode([
-                    'default'  => '',
-                    'null'     => '',
-                    'options'  => [
+                    'default'      => '',
+                    'null'         => '',
+                    'options'      => [
                         '' => '-- None --',
                     ],
                     'relationship' => [
@@ -923,8 +923,8 @@ class DataRowsTableSeeder extends Seeder
     protected function dataRow($type, $field)
     {
         return DataRow::firstOrNew([
-                'data_type_id' => $type->id,
-                'field'        => $field,
-            ]);
+            'data_type_id' => $type->id,
+            'field'        => $field,
+        ]);
     }
 }
