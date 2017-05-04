@@ -6,10 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Component Gaboot</title>
 
-        {{-- <script src="https://unpkg.com/vue@2.3.2"></script> --}}
-        <script src="./../js/app.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script>
+            window.Laravel =  <?php echo json_encode(['csrfToken' => csrf_token(),]); ?>
+        </script>
     </head>
     <body>
-        @yield('content')
+        <div id="app" class="container">
+            @yield('content')
+        </div>
+
+        <script src="./../js/app.js"></script>
     </body>
 </html>
