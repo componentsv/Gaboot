@@ -60,4 +60,9 @@ class GabootController extends Controller
     public function destroy()
     {
     }
+
+    public function oauth2() 
+    {
+        return view('gaboot::oauth2');
+    }
 }
