@@ -49,10 +49,10 @@ class GabootServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__ . '/../Config/config.php' => config_path('gaboot.php'),
+            __DIR__ . '/../../Config/config.php' => config_path('gaboot.php'),
         ]);
         $this->mergeConfigFrom(
-            __DIR__ . '/../Config/config.php', 'gaboot'
+            __DIR__ . '/../../Config/config.php', 'gaboot'
         );
     }
 
@@ -65,7 +65,7 @@ class GabootServiceProvider extends ServiceProvider
     {
         $viewPath = base_path('resources/views/components/gaboot');
 
-        $sourcePath = __DIR__ . '/../Resources/views';
+        $sourcePath = __DIR__ . '/../../Resources/views';
 
         $this->publishes([
             $sourcePath => $viewPath,
@@ -88,7 +88,7 @@ class GabootServiceProvider extends ServiceProvider
         if (is_dir($langPath)) {
             $this->loadTranslationsFrom($langPath, 'gaboot');
         } else {
-            $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'gaboot');
+            $this->loadTranslationsFrom(__DIR__ . '/../../Resources/lang', 'gaboot');
         }
     }
 

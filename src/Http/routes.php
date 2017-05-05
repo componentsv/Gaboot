@@ -4,8 +4,8 @@ Route::group(['middleware' => 'web', 'prefix' => 'gaboot', 'namespace' => 'App\\
     Route::get('/', 'GabootController@index');
 });
 
-// Route::group(['middleware' => ['web']], function () {
-//     Route::group(['prefix' => 'admin'], function () {
-//         Voyager::routes();
-//     });
-// });
+Route::group(['middleware' => ['web']], function () {
+    Route::group(['prefix' => 'admin'], function () {
+        Voyager::routes();
+    });
+});
