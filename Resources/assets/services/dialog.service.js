@@ -2,7 +2,7 @@ export class DialogService {
     constructor($mdDialog) {
         'ngInject';
 
-        this.$mdDialog = $mdDialog
+        this.$mdDialog = $mdDialog;
     }
 
     fromTemplate(template, options) {
@@ -14,7 +14,7 @@ export class DialogService {
             options = {};
         }
 
-        options.templateUrl = './views/dialogs/' + template + '/' + template + '.dialog.html'
+        options.templateUrl = './views/dialogs/' + template + '/' + template + '.dialog.html';
 
         return this.$mdDialog.show(options);
     }
@@ -23,7 +23,7 @@ export class DialogService {
         return this.$mdDialog.hide(params);
     }
 
-    cancel(){
+    cancel() {
         return this.$mdDialog.cancel();
     }
 
